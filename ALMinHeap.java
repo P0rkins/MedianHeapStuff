@@ -10,7 +10,7 @@
 
 import java.util.ArrayList;
 
-public class ALHeap {
+public class ALMinHeap {
 
     //instance vars
     private ArrayList<Integer> _heap; //underlying container is array of Integers
@@ -18,7 +18,7 @@ public class ALHeap {
     /*****************************************************
      * default constructor  ---  inits empty heap
      *****************************************************/
-    public ALHeap() 
+    public ALMinHeap() 
     { 
 	_heap = new ArrayList<Integer>();
     }
