@@ -111,16 +111,16 @@ public class ALMaxHeap {
      * Removes and returns least element in heap.
      * Postcondition: Tree maintains heap property.
      *****************************************************/
-    public double removeMax() {
+    public Integer removeMax() {
 
 	if ( _heap.size() == 0 ) 
 	    return null;
 
 	//store root value for return at end of fxn
-	double retVal = peekMax();
+	Integer retVal = peekMax();
 
 	//store val about to be swapped into root
-	double foo = _heap.get( _heap.size() - 1);
+	Integer foo = _heap.get( _heap.size() - 1);
 
 	//swap last (rightmost, deepest) leaf with root
 	swap( 0, _heap.size() - 1 );
@@ -181,7 +181,7 @@ public class ALMaxHeap {
 
 
     //************ aux helper fxns ***************
-    private double maxOf( double a, double b ) {
+    private Integer maxOf( Integer a, Integer b ) {
 	if ( a.compareTo(b) > 0 )
 	    return a;
 	else
